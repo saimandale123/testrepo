@@ -1,2 +1,10 @@
 ---
 # tasks file for mywebrole
+- name: install webserver
+  apt: 
+    name: apache2
+    state: present
+- name: copy indexfile
+  template: 
+    src: template/myindex.j2
+    dest: var/www/html/index.html
