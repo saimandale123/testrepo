@@ -23,7 +23,6 @@
   file:
     path: /opt/tomcat/webapps/
     recurse: yes
-    mode: g+x
     user: tomcat
     state: directory 
 
@@ -31,7 +30,6 @@
   file:
     path: /opt/tomcat/work/
     recurse: yes
-    mode: g+x
     user: tomcat
     state: directory 
 
@@ -39,7 +37,6 @@
   file:
     path: /opt/tomcat/temp/
     recurse: yes
-    mode: g+x
     user: tomcat
     state: directory 
 
@@ -47,6 +44,5 @@
   file:
     path: /opt/tomcat/logs/
     recurse: yes
-    mode: g+x
     user: tomcat
     state: directory 
