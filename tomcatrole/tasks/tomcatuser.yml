@@ -1,10 +1,11 @@
--name: creat tomcat group
- group:
+---
+- name: creat tomcat group
+  group:
     name: tomcat
     state: present
 
--name: creat tomcat user
- user:
+- name: creat tomcat user
+  user:
     name: tomcat
     state: present
 
