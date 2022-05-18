@@ -1,0 +1,15 @@
+---
+- file:
+    path: /opt/tomcat
+    state: directory
+   
+- name: Download tomcat apache
+  get_url:
+    url: https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.48/bin/apache-tomcat-9.0.48.tar.gz
+    dest: /home/apache-tomcat-9.0.48.tar.gz
+   
+- name: Unarchive a tomcat file 
+  unarchive:
+    src:  /home/apache-tomcat-9.0.48.tar.gz
+    dest: /opt/tomcat
+    remote_src: yes
