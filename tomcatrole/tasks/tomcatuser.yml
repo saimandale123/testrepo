@@ -1,5 +1,5 @@
 -name: creat tomcat group
- user:
+ group:
     name: tomcat
     state: present
 
