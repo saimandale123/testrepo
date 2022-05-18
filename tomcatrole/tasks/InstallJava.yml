@@ -1,0 +1,12 @@
+- name: i want to install jave
+  apt:
+    name: apache2
+    update_cache: yes
+    state: presesnt
+
+- name: Install apache2
+  apt: 
+    name: apache2
+    state: present
+  
+
