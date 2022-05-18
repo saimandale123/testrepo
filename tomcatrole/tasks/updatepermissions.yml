@@ -19,7 +19,7 @@
     mode: g+x
     state: directory
 
-- name:  tomcat user the owner of the webapps
+- name:  make tomcat user the owner of the webapps
   file:
     path: /opt/tomcat/webapps/
     recurse: yes
