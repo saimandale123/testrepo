@@ -25,24 +25,3 @@
     recurse: yes
     user: tomcat
     state: directory 
-
-- name:  tomcat user the owner of the work
-  file:
-    path: /opt/tomcat/work/
-    recurse: yes
-    user: tomcat
-    state: directory 
-
-- name:  tomcat user the owner of the temp
-  file:
-    path: /opt/tomcat/temp/
-    recurse: yes
-    user: tomcat
-    state: directory 
-
-- name:  tomcat user the owner of the logs 
-  file:
-    path: /opt/tomcat/logs/
-    recurse: yes
-    user: tomcat
-    state: directory 
