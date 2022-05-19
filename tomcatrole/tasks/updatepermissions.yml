@@ -41,7 +41,7 @@
     state: directory
 
 - name: Make the tomcat user the owner of the logs directories
-   file:
+  file:
     path: /opt/tomcat/logs/
     recurse: yes
     user: tomcat
