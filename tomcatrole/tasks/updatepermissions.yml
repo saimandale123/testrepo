@@ -19,6 +19,15 @@
     mode: g+x
     state: directory
 
+- name: Change file ownership, group and permissions
+  file:
+    path: /opt/tomcat/webapps/
+    owner: tomcat
+    user: tomcat
+    state: directory
+
+    
+
 - name: make the tomcat user the owner of the webapps directories
   file:
     path: /opt/tomcat/webapps/
