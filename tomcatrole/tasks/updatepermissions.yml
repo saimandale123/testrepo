@@ -19,28 +19,28 @@
     mode: g+x
     state: directory
 
-- name: Make the tomcat user the owner of the webapps directories
+- name: make the tomcat user the owner of the webapps directories
   file:
     path: /opt/tomcat/webapps/
     recurse: yes
     user: tomcat
     state: directory
 
-- name: Make the tomcat user the owner of the work directories
+- name: make the tomcat user the owner of the work directories
   file:
     path: /opt/tomcat/work/
     recurse: yes
     user: tomcat
     state: directory
 
-- name: Make the tomcat user the owner of the temp directories
+- name: make the tomcat user the owner of the temp directories
   file:
     path: /opt/tomcat/temp/
     recurse: yes
     user: tomcat
     state: directory
 
-- name: Make the tomcat user the owner of the logs directories
+- name: make the tomcat user the owner of the logs directories
   file:
     path: /opt/tomcat/logs/
     recurse: yes
