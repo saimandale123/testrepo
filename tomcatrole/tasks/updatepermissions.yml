@@ -21,10 +21,10 @@
 
 - name: make the tomcat user the owner of the webapps directories
   file:
-    path: /opt/tomcat/webapps/
-    recurse: yes
-    user: tomcat
-    state: directory
+     path: /opt/tomcat/webapps/
+     recurse: yes
+     user: tomcat
+     state: directory
 
 - name: make the tomcat user the owner of the work directories
   file:
